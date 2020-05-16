@@ -10,3 +10,8 @@ script:
   - make test
   - make docker_build
   - make docker_push
+
+deploy:
+  provider: heroku
+  app: shrouded-tundra-59314
+  api_key: ${d38be3ff-bd78-408d-a043-604a93b5ec3f}
