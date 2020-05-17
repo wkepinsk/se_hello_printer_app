@@ -6,11 +6,7 @@ pipeline {
 	            sh 'make deps'
         	}
         }
-        stage('Linter'){
-            steps{
-            sh 'flake8' 
-            }
-        }
+        
        stage('Test'){
            steps{
               sh 'make test'
