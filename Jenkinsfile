@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Linter'){
             steps{
-            flake8 
+            sh 'flake8' 
             }
         }
        stage('Test'){
