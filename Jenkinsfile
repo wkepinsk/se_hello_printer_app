@@ -1,11 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Deps') {
             steps {
 	            sh 'make deps'
-	            sh 'make test'
+
         	}
         }
+    stages('Test'){
+        steps{
+              sh 'make test'
+        }
+    }
     }
 }
