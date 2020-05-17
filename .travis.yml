@@ -14,4 +14,4 @@ script:
 deploy:
   provider: heroku
   app: shrouded-tundra-59314
-  api_key: ${d38be3ff-bd78-408d-a043-604a93b5ec3f}
+  api_key: ${HEROKU_API_KEY}
